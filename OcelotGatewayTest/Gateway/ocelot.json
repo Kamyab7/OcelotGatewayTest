@@ -4,7 +4,7 @@
   },
   "Routes": [
     {
-      "UpstreamPathTemplate": "/gateway/Blog",
+      "UpstreamPathTemplate": "/Blog",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/Blog",
       "DownstreamScheme": "https",
