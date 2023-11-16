@@ -1,6 +1,19 @@
 {
-  "GlobalConfiguration": {},
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5003"
+  },
   "Routes": [
-    {}
+    {
+      "UpstreamPathTemplate": "/gateway/Blog",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/Blog",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ]
+    }
   ]
 }
