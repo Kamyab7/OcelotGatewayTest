@@ -4,6 +4,7 @@
   },
   "Routes": [
     {
+      "SwaggerKey": "Blogs",
       "UpstreamPathTemplate": "/Blog",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/Blog",
@@ -12,6 +13,18 @@
         {
           "Host": "localhost",
           "Port": 5001
+        }
+      ]
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "Blogs",
+      "Config": [
+        {
+          "Name": "Blogs API",
+          "Version": "v1",
+          "Url": "https://localhost:5001/swagger/v1/swagger.json"
         }
       ]
     }
