@@ -4,6 +4,19 @@
   },
   "Routes": [
     {
+      "SwaggerKey": "Auth",
+      "UpstreamPathTemplate": "/auth",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamScheme": "https",
+      "DownstreamPathTemplate": "/api/auth",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5004
+        }
+      ]
+    },
+    {
       "SwaggerKey": "Blogs",
       "UpstreamPathTemplate": "/Blog",
       "UpstreamHttpMethod": [ "Get" ],
@@ -15,6 +28,10 @@
           "Port": 5001
         }
       ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "blog.read" ]
+      },
       "RateLimitOptions": {
         "ClientWhitelist": [],
         "EnableRateLimiting": true,
@@ -62,6 +79,17 @@
           "Name": "Users API",
           "Version": "v1",
           "Url": "https://localhost:5002/swagger/v1/swagger.json"
+        }
+      ]
+    },
+
+    {
+      "Key": "Auth",
+      "Config": [
+        {
+          "Name": "Auth API",
+          "Version": "v1",
+          "Url": "https://localhost:5004/swagger/v1/swagger.json"
         }
       ]
     }

@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogServiceAPI", "BlogServi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway", "Gateway\Gateway.csproj", "{1EC2290E-B3F8-4FF5-80E4-0B8471775687}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServiceAPI", "IdentityServiceAPI\IdentityServiceAPI.csproj", "{E773F90F-1F69-47E0-AB40-8D1098A358DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServiceAPI", "IdentityServiceAPI\IdentityServiceAPI.csproj", "{E773F90F-1F69-47E0-AB40-8D1098A358DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtTokenAuthentication", "JwtTokenAuthentication\JwtTokenAuthentication.csproj", "{8BC81E37-BA0C-421F-92E0-9AF0AA279B19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{E773F90F-1F69-47E0-AB40-8D1098A358DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E773F90F-1F69-47E0-AB40-8D1098A358DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E773F90F-1F69-47E0-AB40-8D1098A358DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BC81E37-BA0C-421F-92E0-9AF0AA279B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BC81E37-BA0C-421F-92E0-9AF0AA279B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BC81E37-BA0C-421F-92E0-9AF0AA279B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BC81E37-BA0C-421F-92E0-9AF0AA279B19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
